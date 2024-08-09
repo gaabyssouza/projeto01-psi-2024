@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe de Vôlei - Início</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href= "{% url 'index' %}">Início</a></li>
+                <li><a href= "{% url 'atletas' %}">Atletas</a></li>
+                <li><a href= "{% url 'sobre' %}">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %} 
+        {% endblock %}
+       
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Equipe de Vôlei. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
