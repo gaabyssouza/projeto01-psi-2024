@@ -62,3 +62,8 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+#fotos{
+    max-width: 250px;
+    max-height: 250px;
+}

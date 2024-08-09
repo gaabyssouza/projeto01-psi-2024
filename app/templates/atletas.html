@@ -9,7 +9,7 @@
 
     {% for atleta in atletas %}
     <div class="card" style="width: 18rem;">
-        <img src="{% static atleta.foto %}" class="card-img-top" alt="{{ atleta.nome }}">
+        <img id="fotos" src="{% static atleta.foto %}" class="card-img-top" alt="{{ atleta.nome }}">
         <div class="card-body">
           <h5 class="card-title">{{ atleta.Nome }}</h5>
           <div class="card-text">
